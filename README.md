@@ -69,6 +69,12 @@ function App() {
 }
 ```
 
+## Documentation
+
+- **[DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)** — Complete design system specification
+- **[USAGE.md](./USAGE.md)** — Usage guidelines and examples
+- **[DESIGN_TOKENS.md](./DESIGN_TOKENS.md)** — Design tokens reference
+
 ## File Structure
 
 ```
@@ -79,14 +85,26 @@ src/
 │   ├── Input.tsx
 │   ├── Modal.tsx
 │   ├── Toast.tsx
-│   └── Avatar.tsx
+│   ├── Avatar.tsx
+│   ├── Badge.tsx
+│   ├── Skeleton.tsx
+│   ├── VideoPlayer.tsx
+│   ├── MicroInteractions.tsx
+│   ├── LoadingAnimations.tsx
+│   ├── FeedbackAnimations.tsx
+│   ├── GestureAnimations.tsx
+│   ├── PageTransition.tsx
+│   ├── MobileNavigation.tsx
+│   └── Responsive.tsx
 ├── lib/             # Utilities
 │   ├── utils.ts     # cn() helper
-│   └── animations.ts # Framer Motion springs
+│   ├── animations.ts # Framer Motion springs
+│   └── mobile.ts    # Mobile utilities
 ├── tokens/          # Design tokens
 │   └── index.ts
 ├── styles/          # Global CSS
-│   └── globals.css
+│   ├── globals.css
+│   └── tokens.css
 └── index.ts         # Main exports
 ```
 
