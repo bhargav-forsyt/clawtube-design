@@ -1,0 +1,258 @@
+/**
+ * ClawTube Design Tokens - CSS Variables
+ * TikTok-inspired dark theme design system
+ * All tokens are available as CSS custom properties
+ */
+
+:root {
+  /* ========================================
+     COLOR TOKENS
+     ======================================== */
+  
+  /* Primary (TikTok Red) */
+  --color-primary: #FE2C55;
+  --color-primary-hover: #FF3B6B;
+  --color-primary-pressed: #E12648;
+  --color-primary-glow: rgba(254, 44, 85, 0.4);
+  --color-primary-subtle: rgba(254, 44, 85, 0.15);
+  
+  /* Secondary (TikTok Cyan) */
+  --color-secondary: #25F4EE;
+  --color-secondary-hover: #4FF7F1;
+  --color-secondary-pressed: #1ED8D3;
+  --color-secondary-glow: rgba(37, 244, 238, 0.4);
+  --color-secondary-subtle: rgba(37, 244, 238, 0.15);
+  
+  /* Background Scale */
+  --color-background-primary: #000000;
+  --color-background-secondary: #0F0F0F;
+  --color-background-tertiary: #161823;
+  --color-background-elevated: #1C1F2E;
+  
+  /* Surface */
+  --color-surface-glass: rgba(15, 15, 23, 0.85);
+  --color-surface-overlay: rgba(0, 0, 0, 0.8);
+  
+  /* Border */
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-hover: rgba(255, 255, 255, 0.2);
+  --color-border-active: rgba(255, 255, 255, 0.3);
+  
+  /* Text */
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: rgba(255, 255, 255, 0.65);
+  --color-text-tertiary: rgba(255, 255, 255, 0.45);
+  --color-text-inverse: #000000;
+  --color-text-disabled: rgba(255, 255, 255, 0.35);
+  
+  /* Semantic */
+  --color-success: #00D084;
+  --color-success-bg: rgba(0, 208, 132, 0.15);
+  --color-warning: #FFB800;
+  --color-warning-bg: rgba(255, 184, 0, 0.15);
+  --color-error: #FF4D4F;
+  --color-error-bg: rgba(255, 77, 79, 0.15);
+  --color-info: #25F4EE;
+  --color-info-bg: rgba(37, 244, 238, 0.15);
+  
+  /* ========================================
+     TYPOGRAPHY TOKENS
+     ======================================== */
+  
+  --font-family-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+  
+  /* Font Sizes */
+  --font-size-display: 32px;
+  --font-size-h1: 24px;
+  --font-size-h2: 20px;
+  --font-size-h3: 18px;
+  --font-size-h4: 16px;
+  --font-size-body-lg: 16px;
+  --font-size-body: 14px;
+  --font-size-body-sm: 13px;
+  --font-size-caption: 12px;
+  --font-size-overline: 11px;
+  
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Line Heights */
+  --line-height-tight: 1.1;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  
+  /* Letter Spacing */
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-normal: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+  
+  /* ========================================
+     SPACING TOKENS
+     ======================================== */
+  
+  --spacing-unit: 4px;
+  --spacing-0: 0px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-7: 32px;
+  --spacing-8: 40px;
+  --spacing-9: 48px;
+  --spacing-10: 64px;
+  --spacing-11: 80px;
+  --spacing-12: 96px;
+  
+  /* ========================================
+     BORDER RADIUS TOKENS
+     ======================================== */
+  
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  
+  /* ========================================
+     SHADOW TOKENS
+     ======================================== */
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow-primary: 0 0 20px rgba(254, 44, 85, 0.4);
+  --shadow-glow-secondary: 0 0 20px rgba(37, 244, 238, 0.4);
+  --shadow-glow-primary-lg: 0 0 40px rgba(254, 44, 85, 0.5);
+  --shadow-glow-secondary-lg: 0 0 40px rgba(37, 244, 238, 0.5);
+  
+  /* ========================================
+     ANIMATION TOKENS
+     ======================================== */
+  
+  /* Duration */
+  --duration-instant: 0ms;
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+  --duration-slow: 300ms;
+  --duration-slower: 400ms;
+  --duration-slowest: 600ms;
+  
+  /* Easing */
+  --easing-default: cubic-bezier(0.4, 0, 0.2, 1);
+  --easing-in: cubic-bezier(0.4, 0, 1, 1);
+  --easing-out: cubic-bezier(0, 0, 0.2, 1);
+  --easing-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --easing-elastic: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Spring physics (for reference with Framer Motion) */
+  --spring-bouncy-stiffness: 400;
+  --spring-bouncy-damping: 25;
+  --spring-smooth-stiffness: 300;
+  --spring-smooth-damping: 30;
+  --spring-snappy-stiffness: 500;
+  --spring-snappy-damping: 35;
+  --spring-gentle-stiffness: 200;
+  --spring-gentle-damping: 25;
+  --spring-stiff-stiffness: 600;
+  --spring-stiff-damping: 40;
+  
+  /* ========================================
+     BREAKPOINT TOKENS
+     ======================================== */
+  
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  
+  /* ========================================
+     Z-INDEX SCALE
+     ======================================== */
+  
+  --z-base: 0;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-toast: 700;
+  --z-tooltip: 800;
+}
+
+/* ========================================
+   DARK THEME (default - same as root)
+   ======================================== */
+
+[data-theme="dark"],
+.dark {
+  /* Inherits from :root - already dark theme */
+}
+
+/* ========================================
+   LIGHT THEME (for completeness)
+   ======================================== */
+
+[data-theme="light"],
+.light {
+  /* Background */
+  --color-background-primary: #FFFFFF;
+  --color-background-secondary: #F8F8F8;
+  --color-background-tertiary: #F0F0F0;
+  --color-background-elevated: #FFFFFF;
+  
+  /* Surface */
+  --color-surface-glass: rgba(255, 255, 255, 0.85);
+  --color-surface-overlay: rgba(0, 0, 0, 0.6);
+  
+  /* Border */
+  --color-border: rgba(0, 0, 0, 0.1);
+  --color-border-hover: rgba(0, 0, 0, 0.2);
+  --color-border-active: rgba(0, 0, 0, 0.3);
+  
+  /* Text */
+  --color-text-primary: #000000;
+  --color-text-secondary: rgba(0, 0, 0, 0.65);
+  --color-text-tertiary: rgba(0, 0, 0, 0.45);
+  --color-text-inverse: #FFFFFF;
+  --color-text-disabled: rgba(0, 0, 0, 0.35);
+  
+  /* Shadows (lighter for light theme) */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+/* ========================================
+   UTILITY CLASSES USING TOKENS
+   ======================================== */
+
+@layer utilities {
+  .text-primary { color: var(--color-text-primary); }
+  .text-secondary { color: var(--color-text-secondary); }
+  .text-tertiary { color: var(--color-text-tertiary); }
+  
+  .bg-primary { background-color: var(--color-background-primary); }
+  .bg-secondary { background-color: var(--color-background-secondary); }
+  .bg-tertiary { background-color: var(--color-background-tertiary); }
+  .bg-elevated { background-color: var(--color-background-elevated); }
+  
+  .border-subtle { border-color: var(--color-border); }
+  .border-hover { border-color: var(--color-border-hover); }
+  
+  .shadow-glow-primary { box-shadow: var(--shadow-glow-primary); }
+  .shadow-glow-secondary { box-shadow: var(--shadow-glow-secondary); }
+}
